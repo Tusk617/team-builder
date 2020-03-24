@@ -14,6 +14,8 @@ function App() {
   return (
     <div className="App">
 
+      <Form />
+
       <h1>Team List</h1>
       {initialTeam.map(member => 
         <div key={member.id}> {member.fullName}, {member.email}, {member.role} </div>

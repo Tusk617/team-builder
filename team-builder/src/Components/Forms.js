@@ -4,34 +4,32 @@ import React, {useState} from 'react';
 
 function Form(props) {
     return (
-        <form>
-            <label>Full name
-                <input 
-                    onChange={props.inputThatIsChanging}
-                    value={props.formValues.fullName}
-                    name='fullName'
-                    type='text'
-                />
-            </label>
+    <form>
 
-            <label>email
-                <input 
-                    onChange={props.inputThatIsChanging}
-                    value={props.formValues.email}
-                    name='email'
-                    type='text'
-                />
-            </label>
+        <label> Role: 
+        <select>
+            <option>Backend Engineer</option>
+            <option>Frontend Engineer</option>
+            <option>UX Designer</option>
+            <option>IOS Engineer</option>
+            <option>Android Engineer</option>
+        </select>
+        </label><br />
 
-            <label>role
-                <input 
-                    onChange={props.inputThatIsChanging}
-                    value={props.formValues.role}
-                    name='role'
-                    type='text'
-                />
-            </label>
-        </form>
+        <label> Full Name:
+            <input 
+                name='fullName'
+            />
+        </label><br />
+
+        <label> E-mail:
+            <input 
+                name='email'
+            />
+        </label><br />
+
+        <input type='submit' />
+    </form>
     )
 }
 
